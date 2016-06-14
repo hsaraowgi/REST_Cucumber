@@ -58,7 +58,7 @@ public class DeleteSession {
 		try {
 			
 			URL url1 = new URL("https://"+System.getProperty("TEST_URL")+"/v3/events/"+System.getProperty("Event")+"/activities/"+json.getJSONArray("activities").getJSONObject(loop).getString("ref"));
-			System.out.println(url1);
+			
 			HttpURLConnection conn1 = (HttpURLConnection) url1.openConnection();
 			conn1.setRequestMethod("DELETE");
 			conn1.setRequestProperty("Accept", "application/json");
