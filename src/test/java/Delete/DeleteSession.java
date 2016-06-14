@@ -28,7 +28,7 @@ public class DeleteSession {
 		int loop=0;
 	try {
 	URL url = new URL("https://"+System.getProperty("TEST_URL")+"/v3/events/"+System.getProperty("Event")+"/activities/");
-	System.out.println("https://"+System.getProperty("TEST_URL")+"/v3/events/"+System.getProperty("Event")+"/activities/");
+	
 	HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 	conn.setRequestMethod("GET");
 	conn.setRequestProperty("Accept", "application/json");
@@ -56,7 +56,7 @@ public class DeleteSession {
 	for (loop=0;loop<ticketscount;loop++)
 	{
 		try {
-			System.out.println("https://"+System.getProperty("TEST_URL")+"/v3/events/"+System.getProperty("Event")+"/activities/"+json.getJSONArray("activities").getJSONObject(loop).getString("ref"));
+			
 			URL url1 = new URL("https://"+System.getProperty("TEST_URL")+"/v3/events/"+System.getProperty("Event")+"/activities/"+json.getJSONArray("activities").getJSONObject(loop).getString("ref"));
 			System.out.println(url1);
 			HttpURLConnection conn1 = (HttpURLConnection) url1.openConnection();
