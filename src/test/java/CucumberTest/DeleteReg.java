@@ -1,4 +1,4 @@
-package Delete;
+package CucumberTest;
 
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 import org.json.JSONObject;
-import org.testng.Assert;
+
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
