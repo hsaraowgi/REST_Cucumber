@@ -14,6 +14,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		features = "src/test/java/features", 
 		plugin = {"pretty", "html:target/cucumber-html-report"},
 		//glue = " ",
+		
 		tags = "@testdiary"
 		)
 public class TestRunner extends AbstractTestNGCucumberTests {
